@@ -198,12 +198,13 @@ const monthNames = [
 ]; 
 
 
-const today = monthNames =>
-{
+const today = () => {
 let date = new Date();
 
-return `${monthNames[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}`;
-}
+return `${
+  monthNames[date.getMonth()]
+} ${date.getDate()}, ${date.getFullYear()}`;
+};
 
 
 const now = () =>
